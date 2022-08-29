@@ -1,0 +1,162 @@
+body {
+  background: rgb(223, 223, 223);
+}
+
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header Styles: */
+
+.container {
+  min-width: 30rem;
+  min-height: 34rem;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+nav {
+  width: 99%;
+  height: 3rem;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  padding: .8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.faceContainer {
+  display: flex;
+  align-items: center;
+
+}
+
+.trollFace {
+  width: 12%;
+  margin: 0 10px;
+}
+
+/* Meme Component Styles:  */
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 17px;
+}
+
+.form-input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+
+.form-input:hover {
+  border: 2px solid #711F8D;
+  box-shadow: inset 0 0 2px black;
+  transition: all .2s ease-in-out;
+}
+
+.form-btn {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.form-btn:hover {
+  background: linear-gradient(90.41deg, #790e9c 1.14%, #680987 100%);
+  border: 1px solid black;
+  text-shadow: 0 0 2px white;
+  box-shadow: 0 0 2px black;
+}
+
+.meme {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.memeImg {
+  max-width: 80%;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+
+}
+
+.memeImg:hover {
+  box-shadow: 0 0 10px black;
+}
+
+.memeText {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
+.refreshBtn {
+  padding: .5rem;
+  border-radius: 20px;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.refreshBtn:hover {
+  background: linear-gradient(90.41deg, #790e9c 1.14%, #680987 100%);
+  border: 1px solid black;
+  text-shadow: 0 0 2px white;
+  box-shadow: 0 0 2px black;
+}
